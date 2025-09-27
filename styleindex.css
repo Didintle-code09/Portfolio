@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  background: radial-gradient(#000010, #001f3f);
+  background: radial-gradient(#000010, #000000);
   overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Alan Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 h1 {
     color: white;
     margin-top: 0.1rem;
-    font-family: italic;
+    font-family: 'Alan Sans', sans-serif;
 }
 .carousel-wrapper {
   perspective: 1000px;
@@ -50,7 +50,10 @@ h1 {
   transform-style: preserve-3d;
   transition: transform 1s;
 }
-
+.carousel:hover {
+  transform: scale(1.05) rotateY(10deg);
+  transition: transform 0.5s ease;
+}
 .card {
   position: absolute;
   width: 180px;
@@ -176,3 +179,4 @@ h1 {
     font-size: 1rem;
   }
 }
+
